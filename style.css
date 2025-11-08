@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+button{
+    margin-bottom: 12px;
+}
+
+#sketchPad{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.squareStyle{
+    padding: 0;
+    margin: 0;
+
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border: 1px solid black;
+}
+
