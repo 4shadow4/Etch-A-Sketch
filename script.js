@@ -15,10 +15,15 @@ enter.addEventListener('click', () => {
             const square = document.createElement("div");
     
             square.classList.add("squareStyle");
-            square.addEventListener('mouseover',() => {
-            square.style.backgroundColor = "black";
+
+            square.addEventListener('mouseenter', () => {
+                square.style.backgroundColor = "black";
             });
+
+            
+
             sketchPad.appendChild(square);
+
             }
 
     }else{
