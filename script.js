@@ -4,20 +4,18 @@ const enter = document.querySelector("#enter");
 
 enter.addEventListener('click', () => {
 
-    if(input.value < 11 && +input.value !== NaN){
+    if(input.value < 101 && +input.value !== NaN){
         sketchPad.textContent = '';
 
-        sketchPad.style.width = `${input.value * 64}px`;
-        sketchPad.style.height = `${input.value * 64}px`;
-
-
-        for(let i = 0; i < input.value * input.value; i++){
+            for(let i = 0; i < input.value * input.value; i++){
             const square = document.createElement("div");
-    
+            
+            square.style.width = `${960 / input.value}px`;
+            square.style.height = `${960 / input.value}px`;
             square.classList.add("squareStyle");
 
             square.addEventListener('mouseenter', () => {
-                square.style.backgroundColor = "black";
+                square.style.opacity = `${Number(square.style.opacity) + 0.1}`;
             });
 
             
